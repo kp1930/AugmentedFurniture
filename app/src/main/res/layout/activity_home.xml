@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.HomeActivity">
+
+    <fragment
+        android:id="@+id/arFragmentH"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/scrollViewFoodH" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/ic_plus"
+        android:padding="10dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollViewFoodH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewDonutH"
+                style="@style/Image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="@string/img_donut"
+                app:srcCompat="@drawable/donut" />
+
+            <ImageView
+                android:id="@+id/imageViewFrenchFriesH"
+                style="@style/Image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="@string/img_french_fries"
+                app:srcCompat="@drawable/french_fries" />
+
+            <ImageView
+                android:id="@+id/imageViewHamburgerH"
+                style="@style/Image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="@string/img_hamburger"
+                app:srcCompat="@drawable/hamburger" />
+
+            <ImageView
+                android:id="@+id/imageViewHotDogH"
+                style="@style/Image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="@string/img_hot_dog"
+                app:srcCompat="@drawable/hot_dog" />
+
+            <ImageView
+                android:id="@+id/imageViewPizzaH"
+                style="@style/Image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="@string/img_pizza"
+                app:srcCompat="@drawable/pizza" />
+
+            <ImageView
+                android:id="@+id/imageViewSushiH"
+                style="@style/Image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="@string/img_sushi"
+                app:srcCompat="@drawable/sushi" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">Augmented Furniture</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="log_out">Log Out</string>
+    <string name="food">FOOD</string>
+    <string name="food_ingredients">INGREDIENTS :</string>
+
+    <string name="user_name">User Name</string>
+    <string name="user_mobile_number">Mobile Number</string>
+    <string name="user_birth_date">Birth Date</string>
+    <string name="user_address">Address</string>
+    <string name="user_password">Password</string>
+    <string name="user_terms_and_conditions">By clicking this you are agreeing our terms and conditions.</string>
+    <string name="already_a_user">Already a user?</string>
+    <string name="user_email_id">Email ID</string>
+    <string name="new_user">New user?</string>
+
+    <string name="img_hamburger">TODO</string>
+    <string name="img_user">TODO</string>
+    <string name="img_sushi">TODO</string>
+    <string name="img_hot_dog">TODO</string>
+    <string name="img_donut">TODO</string>
+    <string name="img_french_fries">TODO</string>
+    <string name="img_slider">TODO</string>
+    <string name="img_pizza">TODO</string>
+
+</resources>

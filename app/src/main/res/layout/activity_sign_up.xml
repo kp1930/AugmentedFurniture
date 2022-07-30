@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.SignUpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewSignUpSU"
+            style="@style/TextHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/sign_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.augmentedfurniture.utils.CircularImageView
+            android:id="@+id/imageViewUserSU"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/img_user"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSignUpSU" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUserNameSU"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:drawableStart="@drawable/ic_user"
+            android:hint="@string/user_name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewUserSU"
+            tools:ignore="Autofill" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUserMobileSU"
+            style="@style/EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_mobile"
+            android:hint="@string/user_mobile_number"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/editTextUserNameSU"
+            app:layout_constraintStart_toStartOf="@+id/editTextUserNameSU"
+            app:layout_constraintTop_toBottomOf="@+id/editTextUserNameSU"
+            tools:ignore="Autofill" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUserDOBSU"
+            style="@style/EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_calender"
+            android:hint="@string/user_birth_date"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="@+id/editTextUserMobileSU"
+            app:layout_constraintStart_toStartOf="@+id/editTextUserMobileSU"
+            app:layout_constraintTop_toBottomOf="@+id/editTextUserMobileSU"
+            tools:ignore="Autofill" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUserEmailSU"
+            style="@style/EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="@string/user_email_id"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@+id/editTextUserDOBSU"
+            app:layout_constraintStart_toStartOf="@+id/editTextUserDOBSU"
+            app:layout_constraintTop_toBottomOf="@+id/editTextUserDOBSU"
+            tools:ignore="Autofill" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUserPasswordSU"
+            style="@style/EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_password"
+            android:hint="@string/user_password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextUserEmailSU"
+            app:layout_constraintStart_toStartOf="@+id/editTextUserEmailSU"
+            app:layout_constraintTop_toBottomOf="@+id/editTextUserEmailSU"
+            tools:ignore="Autofill" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkBoxTermsConditionsSU"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/user_terms_and_conditions"
+            android:textAlignment="viewStart"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextUserPasswordSU"
+            app:layout_constraintStart_toStartOf="@+id/editTextUserPasswordSU"
+            app:layout_constraintTop_toBottomOf="@+id/editTextUserPasswordSU" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSignUp"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/sign_up"
+            app:cornerRadius="6dp"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxTermsConditionsSU"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxTermsConditionsSU"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxTermsConditionsSU" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewAlreadyUser"
+            style="@style/TextLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:text="@string/already_a_user"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/buttonSignUp"
+            app:layout_constraintStart_toStartOf="@+id/buttonSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSignUp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
